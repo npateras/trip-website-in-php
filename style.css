@@ -1,0 +1,220 @@
+/* Styling tou Menu */
+  body {
+    margin:0; /* Gia na einai se oli ti selida to menu dioti afine ligo perithorio sta aristera */
+    background-color:#EBEBEB; /* To xrwma tou background */
+  }
+
+  ul {
+  	list-style-type: none; /* Gia na aferesoume tis koukides apo tin lista */
+    margin: 0; /* Gia na einai stin korifi to menu */
+  	padding: 0; /* Gia na einai stoixismeno swsta to menu */
+  	overflow: hidden;
+  	background-color: #333; /* To xrwma twn koumpiwn */
+  	position: fixed; /* Gia na mas akolouthei to menu akoma kai an kanoume scroll down */
+    z-index: 1;
+  	width: 100%; /* Gia na pianei oli ti selida to platos tou menu */
+  }
+  .activebutton {background-color: #015B87;} /* To xrwma pou tha exei to koumpi tou menu otan kapoios einai stin epilegmeni selida */
+  li a:hover:not(.activebutton) {background-color: #111;} /* To xrwma pou tha exoun ta koumpia pou den einai epilegmena, diladi ean eimai stin arxiki selida tote otan kanw hover se autin den tha allazi to xrwma tou koumpiou alla sta alla koumpia tha allazei me to akoloutho xrwma */
+  li {float: left;} /* Gia na stoixithoun pros ta aristera ta periexwmena tou menu kai gia na einai se mia grammi kai oxi se vertical style*/
+  li a {
+      transition: 0.2s linear; /* Gia na dimiourgisoume fade effect otan kapoios kanei hover sta koumpia tou menu */
+      -webkit-transition: 0.2s linear; /* To Chrome & Safari ipostirizoun to transition me to -webkit-*/
+  	  display: block; /* Gia na dimiourgisoume block element */
+  	  color: white;
+  	  font-family: "Arial"; /* Grammatoseira Arial */
+  	  padding: 14px 16px; /* Stoixisi */
+  	  text-decoration: none; /* Gia na aferesoume tis grammes katw apo to text */
+  }
+  .register-login {
+      transition: 0.2s linear; /* Gia na dimiourgisoume fade effect otan kapoios kanei hover sta koumpia tou menu */
+      -webkit-transition: 0.2s linear; /* To Chrome & Safari ipostirizoun to transition me to -webkit-*/
+      float: right;
+      color: white;
+      font-family: "Arial"; /* Grammatoseira Arial */
+      padding: 14px 16px; /* Stoixisi */
+      text-decoration: none; /* Gia na aferesoume tis grammes katw apo to text */
+  }
+  .register-login-slash {
+      float: right;
+      color: white;
+      font-family: "Arial"; /* Grammatoseira Arial */
+      padding: 14px 16px; /* Stoixisi */
+      text-decoration: none; /* Gia na aferesoume tis grammes katw apo to text */
+  }
+  .register-login:hover {color: #015B87;}
+
+/* Styling tou Slideshow */
+  * {box-sizing: border-box}
+  body {font-family: Verdana, sans-serif; margin:0}
+  .mySlides {display: none}
+  img {vertical-align: middle;}
+
+  /* Slideshow container */
+  .border {
+    border-width: 7px;
+    border-style: solid;
+    border-color: black;
+    padding: 0px;
+  }
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: black;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+  .SlideshowCaption{
+    position:absolute;
+    left:0;
+    bottom:0;
+    padding:0.01em 16px;
+    font-size:18px;
+    padding-top:16px;
+    padding-bottom:16px;
+    color:#fff;
+    background-color:#000;
+  }
+
+/* Styling tis formas sto Contact.php */
+  .box {
+    max-width: 450px;
+    padding: 30px;
+    margin: 50px auto;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+    background: #f2f2f2;
+    font-size: 30px;
+    border-radius: 10px;
+    border: 6px solid #30C29E;
+  }
+  .box input[type="submit"],
+  .box input[type="button"]{
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      width: 100%;
+      padding: 3%;
+      font-size: 25px;
+      background: #43D1AF;
+      border-bottom: 2px solid #30C29E;
+      border-top-style: none;
+      border-right-style: none;
+      border-left-style: none;
+      color: #fff;
+  }
+  .box input[type="submit"]:hover,
+  .box input[type="button"]:hover{
+    background: #2EBC99;
+  }
+  .box input[type="text"],
+  .box input[type="email"],
+  .box input[type="tel"],
+  .box input[type="date"],
+  .box input[type="number"],
+  .box textarea,
+  .box select {
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      width: 100%;
+      background: #fff;
+      margin-bottom: 4%;
+      border: 1px solid #ccc;
+      padding: 3%;
+      color: #555;
+      font: 70% Arial, Helvetica, sans-serif;
+      resize: none;
+  }
+  .Line {background-color: #30C29E;}
+  .footer {
+    display: inline-block;
+    width: 100%;
+    padding: 30px;
+    margin: 50px auto;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+    background: #f2f2f2;
+    font-size: 25px;
+    border-top: 6px solid #30C29E;
+    border-bottom: 6px solid #30C29E;
+  }
+  .left{
+    text-align:left;
+    float:left;
+  }
+  .right{
+    float:right;
+    text-align:right;
+  }
+  .centered{text-align:center;}

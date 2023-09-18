@@ -1,0 +1,111 @@
+/* Styling tou Menu */
+  body {
+    margin: 0; /* Gia na einai se oli ti selida to menu dioti afine ligo perithorio sta aristera */
+    background-color: #EBEBEB; /* To xrwma tou background */
+    font-family: Verdana, sans-serif;
+  }
+  img {vertical-align: middle;}
+  ul {
+  	list-style-type: none; /* Gia na aferesoume tis koukides apo tin lista */
+    margin: 0; /* Gia na einai stin korifi to menu */
+  	padding: 0; /* Gia na einai stoixismeno swsta to menu */
+  	overflow: hidden;
+  	background-color: #333; /* To xrwma twn koumpiwn */
+  	position: fixed; /* Gia na mas akolouthei to menu akoma kai an kanoume scroll down */
+  	width: 100%; /* Gia na pianei oli ti selida to platos tou menu */
+  }
+  .activebutton {background-color: #015B87;} /* To xrwma pou tha exei to koumpi tou menu otan kapoios einai stin epilegmeni selida */
+  li a:hover:not(.activebutton) {background-color: #111;} /* To xrwma pou tha exoun ta koumpia pou den einai epilegmena, diladi ean eimai stin arxiki selida tote otan kanw hover se autin den tha allazi to xrwma tou koumpiou alla sta alla koumpia tha allazei me to akoloutho xrwma */
+  li {float: left;} /* Gia na stoixithoun pros ta aristera ta periexwmena tou menu kai gia na einai se mia grammi kai oxi se vertical style*/
+  li a {
+      transition: 0.2s linear; /* Gia na dimiourgisoume fade effect otan kapoios kanei hover sta koumpia tou menu */
+      -webkit-transition: 0.2s linear; /* To Chrome & Safari ipostirizoun to transition me to -webkit-*/
+  	  display: block; /* Gia na dimiourgisoume block element */
+  	  color: white;
+  	  font-family: "Arial"; /* Grammatoseira Arial */
+  	  padding: 14px 16px; /* Stoixisi */
+  	  text-decoration: none; /* Gia na aferesoume tis grammes katw apo to text */
+  }
+  .register-login {
+      transition: 0.2s linear; /* Gia na dimiourgisoume fade effect otan kapoios kanei hover sta koumpia tou menu */
+      -webkit-transition: 0.2s linear; /* To Chrome & Safari ipostirizoun to transition me to -webkit-*/
+      float: right;
+      color: white;
+      font-family: "Arial"; /* Grammatoseira Arial */
+      padding: 14px 16px; /* Stoixisi */
+      text-decoration: none; /* Gia na aferesoume tis grammes katw apo to text */
+  }
+  .register-login-slash {
+      float: right;
+      color: white;
+      font-family: "Arial"; /* Grammatoseira Arial */
+      padding: 14px 16px; /* Stoixisi */
+      text-decoration: none; /* Gia na aferesoume tis grammes katw apo to text */
+  }
+  .register-login:hover {color: #015B87;}
+
+/*  */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.header {
+  width: 30%;
+  margin: 50px auto 0px;
+  color: white;
+  background: #30C29E;
+  text-align: center;
+  border: 1px solid #B0C4DE;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  padding: 20px;
+}
+form, .content {
+  width: 30%;
+  margin: 0px auto;
+  padding: 20px;
+  border: 1px solid #B0C4DE;
+  background: white;
+  border-radius: 0px 0px 10px 10px;
+}
+.input-group {
+  margin: 10px 0px 10px 0px;
+}
+.input-group label {
+  display: block;
+  text-align: left;
+  margin: 3px;
+}
+.input-group input {
+  height: 30px;
+  width: 93%;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.btn {
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background: #5F9EA0;
+  border: none;
+  border-radius: 5px;
+}
+.error {
+  width: 92%;
+  margin: 0px auto;
+  padding: 10px;
+  border: 1px solid #a94442;
+  color: #a94442;
+  background: #f2dede;
+  border-radius: 5px;
+  text-align: left;
+}
+.success {
+  color: #3c763d;
+  background: #dff0d8;
+  border: 1px solid #3c763d;
+  margin-bottom: 20px
+}
